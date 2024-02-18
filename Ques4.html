@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            height: 180px;
+            width: 650px;
+            margin: 5px;
+            padding: 5px;
+            border: 2px solid black;
+        }
+
+        .con {
+            display: grid;
+            grid-template-columns: repeat(6, 100px); 
+            grid-gap: 10px;
+        }
+
+        .con1 {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            grid-gap: 10px;
+        }
+
+        .child:nth-child(even) {
+            background-color: gray;
+        }
+
+        .child:nth-child(odd) {
+            background-color: black;
+        }
+
+        .child {
+            padding: 20px;
+            margin: 5px;
+            height: 30px;
+            width: 50px;
+            color: white;
+            border-radius: 5px;
+        }
+
+        body {
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="con">
+            <div class="child">3</div>
+            <div class="child">4</div>
+            <div class="child">5</div>
+            <div class="child">6</div>
+            <div class="child">7</div>
+            <div class="child">8</div>
+        </div>
+        <div class="con1">
+            <div class="child">1</div>
+            <div class="child">2</div>
+        </div>
+    </div>
+</body>
+</html>

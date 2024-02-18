@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            grid-template-rows: 50px 50px;
+            grid-auto-rows: 75px;
+            grid-auto-columns: 75px;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+     <p>
+        'grid-auto-row' and 'grid-auto-column' are properties in CSS Grid layout that control the sizing and behaviour of implicitly created rows and columns when grid items are placed outside of explicitly defined grid tracks.
+          In this example, the '.grid-container' has two explicitly defined columns and rows, each with a size of 100px by 50px. If additional grid items are added beyond the explicitly defined grid, they will create implicit rows and columns 
+     With the given CSS, if there are more than two items in a row, new rows will be created implicitly. Each implicitly created row will have a height of 75px, and each implicitly created column will have a width of 75px, as defined by 'grid-auto-rows' and 'grid-auto-columns', respectively
+     </p>
+</body>
+</html>
